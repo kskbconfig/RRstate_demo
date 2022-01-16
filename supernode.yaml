@@ -1,0 +1,46 @@
+NodeName: dn42-egnetSP
+PostScript: ""
+PrivKeyV4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+PrivKeyV6: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+ListenPort: 3000
+ListenPort_EdgeAPI: "3000"
+ListenPort_ManageAPI: "3000"
+API_Prefix: /eg_net/eg_api
+RePushConfigInterval: 30
+HttpPostInterval: 50
+PeerAliveTimeout: 70
+SendPingInterval: 15
+DampingFilterRadius: 4
+LogLevel:
+  LogLevel: normal
+  LogTransit: false
+  LogNormal: false
+  LogControl: false
+  LogInternal: true
+  LogNTP: false
+Passwords:
+  ShowState: showstate
+  AddPeer: addpeer
+  DelPeer: delpeer
+  UpdatePeer: updatepeer
+  UpdateSuper: updatesuper
+GraphRecalculateSetting:
+  StaticMode: false
+  ManualLatency: {}
+  JitterTolerance: 30
+  JitterToleranceMultiplier: 1.01
+  TimeoutCheckInterval: 5
+  RecalculateCoolDown: 5
+NextHopTable: {}
+EdgeTemplate: ""
+UsePSKForInterEdge: true
+ResetEndPointInterval: 600
+Peers:
+- NodeID: 1001
+  Name: relay_kr
+  PubKey: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  PSKey: ""
+  AdditionalCost: 10
+  SkipLocalIP: false
+  EndPoint: "tw.kskb.eu.org:31456"
+  ExternalIP: ""

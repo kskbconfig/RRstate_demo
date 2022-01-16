@@ -1,0 +1,13 @@
+#!/bin/bash
+. /.denv
+if [[ "$WGET_DATE" == 1 ]]; then
+  echo "wget_date_http enabled"
+  git clone --depth 1 https://github.com/KusakabeSi/http-date-server.git /etc/wget_date
+  cd /etc/wget_date
+  chmod 755 http-date-server.py
+  exec python3 http-date-server.py
+else
+  echo "wget_date_http not enabled, down"
+  sv down wget_date_http
+  exec sleep infinity
+fi

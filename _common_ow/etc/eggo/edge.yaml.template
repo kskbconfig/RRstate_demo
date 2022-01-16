@@ -1,0 +1,85 @@
+Interface:
+  IType: unixpacketsock
+  Name: EgNet001
+  VPPIFaceID: 1
+  VPPBridgeID: 4242
+  MacAddrPrefix: ${EG_MACPREFIX}
+  IPv4CIDR: ""
+  IPv6CIDR: ""
+  IPv6LLPrefix: ""
+  MTU: ${EG_IF_MTU}
+  RecvAddr: /run/etherguard.sock
+  SendAddr: ""
+  L2HeaderMode: kbdbg
+NodeID: ${NODE_ID}
+NodeName: eg_internal
+PostScript: ""
+DefaultTTL: 200
+L2FIBTimeout: 3600
+PrivKey: ${EG_PRIVKEY}
+ListenPort: 0
+LogLevel:
+  LogLevel: error
+  LogTransit: false
+  LogNormal: false
+  LogControl: false
+  LogInternal: false
+  LogNTP: false
+DynamicRoute:
+  SendPingInterval: 16
+  PeerAliveTimeout: 100
+  TimeoutCheckInterval: 20
+  ConnNextTry: 5
+  DupCheckTimeout: 40
+  AdditionalCost: 10
+  DampingFilterRadius: 4
+  SaveNewPeers: false
+  SuperNode:
+    UseSuperNode: true
+    PSKey: ""
+    EndpointV4: '${EG_SUPER_V4}'
+    PubKeyV4: ${EG_SUPER_V4_KEY}
+    EndpointV6: '${EG_SUPER_V6}'
+    PubKeyV6: ${EG_SUPER_V6_KEY}
+    EndpointEdgeAPIUrl: ${EG_SUPER_API}
+    SkipLocalIP: true
+    SuperNodeInfoTimeout: 120
+  P2P:
+    UseP2P: false
+    SendPeerInterval: 20
+    GraphRecalculateSetting:
+      StaticMode: false
+      ManualLatency: {}
+      JitterTolerance: 50
+      JitterToleranceMultiplier: 1.1
+      TimeoutCheckInterval: 60
+      RecalculateCoolDown: 5
+  NTPConfig:
+    UseNTP: true
+    MaxServerUse: 8
+    SyncTimeInterval: 86400
+    NTPTimeout: 3
+    Servers:
+    - time.google.com
+    - time1.google.com
+    - time2.google.com
+    - time3.google.com
+    - time4.google.com
+    - time1.facebook.com
+    - time2.facebook.com
+    - time3.facebook.com
+    - time4.facebook.com
+    - time5.facebook.com
+    - time.cloudflare.com
+    - time.apple.com
+    - time.asia.apple.com
+    - time.euro.apple.com
+    - time.windows.com
+    - pool.ntp.org
+    - 0.pool.ntp.org
+    - 1.pool.ntp.org
+    - 2.pool.ntp.org
+    - 3.pool.ntp.org
+NextHopTable: {}
+ResetConnInterval: 86400
+Peers: []

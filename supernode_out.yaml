@@ -1,0 +1,82 @@
+API_Prefix: /eg_net/eg_api
+DampingFilterRadius: 4
+EdgeTemplate: ''
+GraphRecalculateSetting:
+  JitterTolerance: 30
+  JitterToleranceMultiplier: 1.01
+  ManualLatency: {}
+  RecalculateCoolDown: 5
+  StaticMode: false
+  TimeoutCheckInterval: 5
+HttpPostInterval: 50
+ListenPort: 3000
+ListenPort_EdgeAPI: '3000'
+ListenPort_ManageAPI: '3000'
+LogLevel:
+  LogControl: false
+  LogInternal: true
+  LogLevel: normal
+  LogNTP: false
+  LogNormal: false
+  LogTransit: false
+NextHopTable: {}
+NodeName: dn42-egnetSP
+Passwords:
+  AddPeer: addpeer
+  DelPeer: delpeer
+  ShowState: showstate
+  UpdatePeer: updatepeer
+  UpdateSuper: updatesuper
+PeerAliveTimeout: 70
+Peers:
+- AdditionalCost: 10
+  EndPoint: tw.kskb.eu.org:31456
+  ExternalIP: ''
+  Name: relay_kr
+  NodeID: 1001
+  PSKey: ''
+  PubKey: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  SkipLocalIP: false
+- name: hk
+  nodeid: 1
+  pskey: ''
+  pubkey: L+V9o0fNYkMVKNqsX7spBzD/9oSvxM/C7ZCZX1jLO3Q=
+- name: jp
+  nodeid: 9
+  pskey: ''
+  pubkey: L+V9o0fNYkMVKNqsX7spBzD/9oSvxM/C7ZCZX1jLO3Q=
+- name: sg
+  nodeid: 17
+  pskey: ''
+  pubkey: L+V9o0fNYkMVKNqsX7spBzD/9oSvxM/C7ZCZX1jLO3Q=
+- name: usw
+  nodeid: 33
+  pskey: ''
+  pubkey: L+V9o0fNYkMVKNqsX7spBzD/9oSvxM/C7ZCZX1jLO3Q=
+- name: ca
+  nodeid: 51
+  pskey: ''
+  pubkey: L+V9o0fNYkMVKNqsX7spBzD/9oSvxM/C7ZCZX1jLO3Q=
+- name: ch
+  nodeid: 65
+  pskey: ''
+  pubkey: L+V9o0fNYkMVKNqsX7spBzD/9oSvxM/C7ZCZX1jLO3Q=
+- name: nl
+  nodeid: 66
+  pskey: ''
+  pubkey: L+V9o0fNYkMVKNqsX7spBzD/9oSvxM/C7ZCZX1jLO3Q=
+- name: au
+  nodeid: 81
+  pskey: ''
+  pubkey: L+V9o0fNYkMVKNqsX7spBzD/9oSvxM/C7ZCZX1jLO3Q=
+- name: uae
+  nodeid: 89
+  pskey: ''
+  pubkey: L+V9o0fNYkMVKNqsX7spBzD/9oSvxM/C7ZCZX1jLO3Q=
+PostScript: ''
+PrivKeyV4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+PrivKeyV6: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+RePushConfigInterval: 30
+ResetEndPointInterval: 600
+SendPingInterval: 15
+UsePSKForInterEdge: true

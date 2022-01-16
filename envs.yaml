@@ -1,0 +1,159 @@
+'1':
+  name: hk
+  name ab: HK
+  name full: Hong Kong
+  len: 16
+  eg: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  wg: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  regcode: 52
+  cf:
+    AccountTag: 
+    TunnelSecret: 
+    TunnelID: 
+    TunnelName: 
+'9':
+  name: jp
+  name ab: Japan
+  name full: Japan Tokyo
+  len: 16
+  eg: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  wg: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  regcode: 52
+  cf:
+    AccountTag: 
+    TunnelSecret: 
+    TunnelID: 
+    TunnelName: 
+'17':
+  name: sg
+  name ab: Singapore
+  name full: Singapore
+  len: 8
+  eg: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  wg: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  regcode: 51
+  cf:
+    AccountTag: 
+    TunnelSecret: 
+    TunnelID: 
+    TunnelName: 
+  env:
+    BIRD_CPU_QUOTA: -1
+    WG_SPEED_LIMIT: -1
+'33':
+  name: usw
+  name ab: US West
+  name full: United States Washington
+  len: 8
+  eg: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  wg: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  regcode: 43
+  cf:
+    AccountTag: 
+    TunnelSecret: 
+    TunnelID: 
+    TunnelName: 
+# '49':
+#   name: use
+#   name ab: US East
+#   name full: United States Virginia
+#   len: 8
+#   eg: eECSFj4wJZp0lRBDrSa79JJi5AQSlw/L9f0d/d4+Z2s=
+#   wg: mHkI/SwM219GsfbYGy0W9t5x8aR+XufNe3t1dIxc1nk=
+#   regcode: 42
+#   cf:
+#     AccountTag: 
+#     TunnelSecret: 
+#     TunnelID: 
+#     TunnelName: 
+'51':
+  name: ca
+  name ab: Canada
+  name full: Canada Toronto
+  len: 8
+  eg: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  wg: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  regcode: 42
+  cf:
+    AccountTag: 
+    TunnelSecret: 
+    TunnelID: 
+    TunnelName: 
+'65':
+  name: ch
+  name ab: Switzerland
+  name full: Switzerland Zürich
+  len: 8
+  eg: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  wg: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  regcode: 41
+  cf:
+    AccountTag: 
+    TunnelSecret: 
+    TunnelID: 
+    TunnelName: 
+'66':
+  name: nl
+  name ab: Netherlands
+  name full: Netherlands
+  len: 8
+  eg: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  wg: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  regcode: 41
+  cf:
+    AccountTag: 
+    TunnelSecret: 
+    TunnelID: 
+    TunnelName: 
+'81':
+  name: au
+  name ab: Australia
+  name full: Australia Canberra
+  len: 8
+  eg: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  wg: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  regcode: 53
+  cf:
+    AccountTag: 
+    TunnelSecret: 
+    TunnelID: 
+    TunnelName: 
+'89':
+  name: uae
+  name ab: United Arab Emirates
+  name full: United Arab Emirates Dubai
+  len: 8
+  eg: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  wg: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  regcode: 54
+  cf:
+    AccountTag: 
+    TunnelSecret: 
+    TunnelID: 
+    TunnelName: 
+# '97':
+#   name: br
+#   name ab: Brazil
+#   name full: Brazil São Paulo
+#   len: 8
+#   eg: gEeK9xla06xQpQ660LHrz5ddZrw74RxK2UFF/axeYkw=
+#   wg: gAbBcoCZp0O4SUu/7nr3J1AVxbykR31GvT1SBkWXdE0=
+#   regcode: 42
+#   cf:
+#     AccountTag: 
+#     TunnelSecret: 
+#     TunnelID: 
+#     TunnelName: 
+#'121':
+#  name: za
+#  name ab: ZA
+#  name full: ZA Johannesburg
+#  len: 8
+#  eg: aOZd2Tzusc4QNPkn2U+xlN4XfUo7RIyFtIWs6uoSZVc=
+#  wg: yCcbcVvz0KX4DFH5G9i6JHztF5fGnj7T3Jgo4oiAB0Y=
+#  regcode: 42
+#  cf:
+#    AccountTag: 
+#    TunnelSecret: 
+#    TunnelID: 
+#    TunnelName: 

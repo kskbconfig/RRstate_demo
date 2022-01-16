@@ -1,0 +1,13 @@
+#!/bin/bash
+. /.denv
+if [[ "$WGET_DATE" == 1 ]]; then
+  echo "wget_date_cloudflared enabled"
+  mkdir -p /etc/cloudflared
+  printf -- "${WGET_DATE_CLOUDFLARED_TUNNEL_CRET}" > /etc/cloudflared/wget_date_tunnel.json
+  WGET_DATE_CLOUDFLARED_TUNNEL_NAME=$(echo $WGET_DATE_CLOUDFLARED_TUNNEL_CRET | jq  -r '.TunnelName')
+  exec cloudflared --credentials-file /etc/cloudflared/wget_date_tunnel.json --url http://127.0.0.1:$WGET_DATE_SERVER_PORT tunnel run $WGET_DATE_CLOUDFLARED_TUNNEL_NAME
+else
+  echo "wget_date_cloudflared not enabled, down"
+  sv down wget_date_cloudflared
+  exec sleep infinity
+fi
